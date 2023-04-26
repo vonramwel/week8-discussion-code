@@ -1,14 +1,14 @@
 /*
   Created by: Claizel Coubeili Cepe
-  Date: 27 October 2022
-  Description: Sample todo app with networking
+  Date: updated April 26, 2023
+  Description: Sample todo app with Firebase 
 */
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:week7_networking_discussion/models/todo_model.dart';
-import 'package:week7_networking_discussion/providers/todo_provider.dart';
-import 'package:week7_networking_discussion/screens/modal_todo.dart';
+import '../models/todo_model.dart';
+import '../providers/todo_provider.dart';
+import 'modal_todo.dart';
 
 class TodoPage extends StatefulWidget {
   const TodoPage({super.key});
@@ -91,7 +91,8 @@ class _TodoPageState extends State<TodoPage> {
             context: context,
             builder: (BuildContext context) => TodoModal(
               type: 'Add',
-              todoIndex: -1, // Flag to identify that this particular modal is for add
+              todoIndex:
+                  -1, // Flag to identify that this particular modal is for add
             ),
           );
         },

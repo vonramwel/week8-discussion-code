@@ -1,7 +1,7 @@
 /*
   Created by: Claizel Coubeili Cepe
-  Date: 27 October 2022
-  Description: Sample todo app with networking
+  Date: updated April 26, 2023
+  Description: Sample todo app with Firebase 
 */
 
 import 'package:flutter/material.dart';
@@ -64,7 +64,6 @@ class TodoModal extends StatelessWidget {
             {
               // Instantiate a todo objeect to be inserted, default userID will be 1, the id will be the next id in the list
               Todo temp = Todo(
-                  id: todoItems.length,
                   userId: 1,
                   completed: false,
                   title: _formFieldController.text);

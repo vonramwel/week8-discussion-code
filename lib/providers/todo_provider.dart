@@ -1,30 +1,27 @@
 /*
   Created by: Claizel Coubeili Cepe
-  Date: 27 October 2022
-  Description: Sample todo app with networking
+  Date: updated April 26, 2023
+  Description: Sample todo app with Firebase 
 */
 
 import 'package:flutter/material.dart';
-import 'package:week7_networking_discussion/models/todo_model.dart';
+import '../models/todo_model.dart';
 
 class TodoListProvider with ChangeNotifier {
   List<Todo> _todoList = [
     Todo(
       completed: true,
       userId: 1,
-      id: 1,
       title: "Grocery",
     ),
     Todo(
       completed: true,
       userId: 1,
-      id: 2,
       title: "Bills",
     ),
     Todo(
       completed: false,
       userId: 1,
-      id: 3,
       title: "Walk dog",
     ),
   ];

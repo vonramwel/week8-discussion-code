@@ -1,13 +1,13 @@
 /*
   Created by: Claizel Coubeili Cepe
-  Date: 27 October 2022
-  Description: Sample todo app with networking
+  Date: updated April 26, 2023
+  Description: Sample todo app with Firebase 
 */
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:week7_networking_discussion/providers/todo_provider.dart';
-import 'package:week7_networking_discussion/screens/todo_page.dart';
+import 'providers/todo_provider.dart';
+import 'screens/todo_page.dart';
 
 void main() {
   runApp(
